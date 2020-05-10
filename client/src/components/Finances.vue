@@ -64,7 +64,7 @@
             const user = localStorage.getItem('user');
             const userObj = JSON.parse(user);
             const userToken = userObj.token;
-            const cubejsApi = cubejs(userToken, {apiUrl: `${process.env.VUE_APP_API_URL}/cubejs-api/v1`});
+            const cubejsApi = cubejs(userToken, {apiUrl: `http://79.143.30.13/cubejs-api/v1`});
             return {
                 cubejsApi,
                 cost: null,
@@ -101,7 +101,7 @@
                         segment: this.segment,
                         profit: this.actionSelected === 'Profit' ? 1 : 0
                     };
-                    const response = await axios.post(`${process.env.VUE_APP_API_URL}/payments/add`, payload);
+                    const response = await axios.post(`http://79.143.30.13/payments/add`, payload);
                     if (response.status === 201) {
                         this.$root.$emit('show_snackbar', {text: 'Payment successfully added'});
                     }

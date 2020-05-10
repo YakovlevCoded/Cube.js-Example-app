@@ -95,7 +95,7 @@
                     return false
                 }
                 try {
-                    const response = await axios.post(`${process.env.VUE_APP_API_URL}/login/registration`, {
+                    const response = await axios.post(`http://79.143.30.13/login/registration`, {
                         login: this.login,
                         password: this.password
                     });
@@ -117,7 +117,7 @@
                     return false
                 }
                 try {
-                    const response = await axios.post(`${process.env.VUE_APP_API_URL}/login/sign`, {
+                    const response = await axios.post(`http://79.143.30.13/login/sign`, {
                         login: this.login,
                         password: this.password
                     });
