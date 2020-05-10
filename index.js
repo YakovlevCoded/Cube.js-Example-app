@@ -116,11 +116,11 @@ app.post('/payments/add', async (req, res) => {
 
 
 app.use((req, res, next) => {
-  if (!req.headers.authorization) {
-    res.redirect('/login');
-    return;
-  }
-  console.log(req.headers.authorization);
+  // if (!req.headers.authorization) {
+  //   res.redirect('/login');
+  //   return;
+  // }
+  // console.log(req.headers.authorization);
   next();
 });
 
