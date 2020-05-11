@@ -117,7 +117,7 @@
                     return false
                 }
                 try {
-                    const response = await axios.post(`http://79.143.30.13/login/sign`, {
+                    const response = await axios.post(`/login/sign`, {
                         login: this.login,
                         password: this.password
                     });
