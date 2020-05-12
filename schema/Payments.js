@@ -4,6 +4,9 @@ cube(`Payments`, {
   joins: {
 
   },
+  refreshKey: {
+    every: `15 second`
+  },
 
   measures: {
     count: {
