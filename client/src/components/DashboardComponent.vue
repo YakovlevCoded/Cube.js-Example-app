@@ -69,7 +69,8 @@
                                 "operator": "contains",
                                 "values": []
                             }
-                        ]
+                        ],
+                        renewQuery: true,
                     },
                     title: 'Company profit value',
                     type: 'line',
@@ -94,7 +95,8 @@
                                     "operator": "contains",
                                     "values": []
                                 }
-                            ]
+                            ],
+                            renewQuery: true,
                         },
                         title: 'Company expense value',
                         type: 'line',
@@ -111,7 +113,8 @@
                             "measures": [
                                 "Payments.expenseValue"
                             ],
-                            "filters": []
+                            "filters": [],
+                            renewQuery: true,
                         },
                         title: 'Expense segments',
                         type: 'pie',
@@ -128,7 +131,8 @@
                             "measures": [
                                 "Payments.profitValue"
                             ],
-                            "filters": []
+                            "filters": [],
+                            renewQuery: true,
                         },
                         title: 'Profit segments',
                         type: 'pie',
